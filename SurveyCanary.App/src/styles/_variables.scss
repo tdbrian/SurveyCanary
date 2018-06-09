@@ -1,7 +1,12 @@
+@import "../../node_modules/bootstrap/scss/functions";
+
 // Variables
 //
 // Variables should follow the `$component-state-property-size` formula for
 // consistent naming. Ex: $nav-link-disabled-color and $modal-content-box-shadow-xs.
+
+// SurveyCanary Specific
+
 
 
 //
@@ -38,7 +43,7 @@ $grays: map-merge(
 );
 
 
-$blue:    #007bff !default;
+$blue:    #049ae5 !default; // Slightly different blue variation
 $indigo:  #6610f2 !default;
 $purple:  #6f42c1 !default;
 $pink:    #e83e8c !default;

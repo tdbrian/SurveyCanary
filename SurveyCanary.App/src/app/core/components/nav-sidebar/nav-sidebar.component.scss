@@ -1,0 +1,61 @@
+@import 'src/styles/variables';
+.wrapper {
+  position: fixed;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 250px;
+  background-color: #27303d;
+}
+
+#nav-sidebar-header {
+  margin-bottom: 15px;
+}
+
+#corner-logo {
+  margin-top: 35px;
+  margin-bottom: 35px;
+  ;
+  color: white;
+  text-transform: uppercase;
+  font-size: 18px;
+  i {
+    font-size: 32px;
+    padding-right: 5px;
+    margin-top: -8px;
+    color: #ffcc2d;
+  }
+  div {
+    padding-top: 4px;
+    strong {
+      font-weight: 600;
+    }
+  }
+  span {
+    font-weight: 700;
+  }
+}
+
+#corner-logo-image {
+  height: 33px;
+  padding-right: 9px;
+}
+
+#corner-user-icon {
+  font-size: 80px;
+  opacity: .15;
+  margin-bottom: 15px;
+}
+
+#company-name {
+  font-size: 17px;
+  opacity: .95;
+  margin-bottom: 4px;
+}
+
+#user-email {
+  font-size: 14px;
+  opacity: .5;
+  font-weight: 400;
+}
+

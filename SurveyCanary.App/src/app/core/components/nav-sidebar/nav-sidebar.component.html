@@ -1,3 +1,31 @@
-<p>
-  nav-sidebar works!
-</p>
+<section class="wrapper">
+
+  <!-- Sidebar header -->
+  <section id="nav-sidebar-header" class="d-flex justify-content-center flex-column">
+
+    <!-- logo -->
+    <div id="corner-logo" class="d-flex justify-content-center">
+      <i class="mdi mdi-file-find"></i>
+      <!-- <i class="mdi mdi-format-list-checks"></i> -->
+      <div>Survey<strong>Canary</strong></div>
+    </div>
+
+    <!-- User gravitar -->
+    <div class="d-flex justify-content-center">
+      <i id="corner-user-icon" class="fa fa-user-circle" aria-hidden="true"></i>
+    </div>
+
+    <!-- User company name -->
+    <div class="d-flex justify-content-center">
+      <h1 id="company-name" class="user-info">{{user?.name}}</h1>
+    </div>
+
+    <!-- User email -->
+    <div class="d-flex justify-content-center user-info">
+      <h2 id="user-email">{{user?.email}}</h2>
+    </div>
+
+  </section>
+
+</section>
+
