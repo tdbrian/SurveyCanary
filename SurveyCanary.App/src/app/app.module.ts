@@ -25,7 +25,9 @@ export function initApiConfiguration(config: ApiConfiguration): Function {
     useFactory: initApiConfiguration,
     deps: [ApiConfiguration],
     multi: true
-  }],
+  },
+  ApiConfiguration
+],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
