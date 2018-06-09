@@ -1,4 +1,9 @@
 @import 'src/styles/variables';
+
+$border: 2px solid #262f3d;
+$box-shadow: 0 -1px 0 #404854 inset;
+$left-padding: 20px;
+
 .wrapper {
   position: fixed;
   left: 0;
@@ -13,16 +18,18 @@
 }
 
 #corner-logo {
-  margin-top: 35px;
-  margin-bottom: 35px;
-  ;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  padding-left: $left-padding;
   color: white;
   text-transform: uppercase;
-  font-size: 18px;
+  font-size: 16px;
+  box-shadow: $box-shadow;
+  border: $border;
   i {
-    font-size: 32px;
+    font-size: 28px;
     padding-right: 5px;
-    margin-top: -8px;
+    margin-top: -6px;
     color: #ffcc2d;
   }
   div {
