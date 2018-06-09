@@ -1,8 +1,8 @@
 @import 'src/styles/variables';
 
-$border: 2px solid #262f3d;
+$border: 1px solid #262f3d;
 $box-shadow: 0 -1px 0 #404854 inset;
-$left-padding: 20px;
+$padding: 20px;
 
 :host {
   display: flex;
@@ -18,7 +18,7 @@ $left-padding: 20px;
 #corner-logo {
   padding-top: 10px;
   padding-bottom: 6px;
-  padding-left: $left-padding;
+  padding-left: $padding;
   color: white;
   text-transform: uppercase;
   font-size: 16px;
@@ -38,5 +38,44 @@ $left-padding: 20px;
   }
 }
 
+$sub-nav-padding: 5px;
+.nav-area {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  border-bottom: $border;
+  animation: 1s ease 3.5s forwards;
 
+  .header {
+    padding-top: $padding;
+    padding-left: $padding;
+    padding-bottom: $padding;
+    font-weight: 500;
+    text-transform: uppercase;
+  }
+
+  &.open {
+    background-color: #19212b;
+    .header {
+      padding-bottom: $padding - $sub-nav-padding;
+    }
+    .nav-sub {
+      padding-bottom: $padding;
+      height: 100%;
+    }
+  }
+
+  .nav-sub {
+    overflow: hidden;
+    height: 0;
+  }
+
+  .nav-item {
+    padding-left: $padding;
+    opacity: .7;
+    padding-top: $sub-nav-padding;
+    padding-bottom: $sub-nav-padding;
+    font-weight: 500;
+  }
+}
 
