@@ -3,10 +3,12 @@
 $highlight-color: #374152;
 $border: 1px solid #374152;
 $padding: 20px;
+$active-color: #55c6ff;
 
 :host {
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
   position: fixed;
   left: 0;
   top: 0;
@@ -16,7 +18,7 @@ $padding: 20px;
 }
 
 #corner-logo {
-  padding-top: 10px;
+  padding-top: 15px;
   padding-bottom: 6px;
   padding-left: $padding;
   color: white;
@@ -92,3 +94,37 @@ $sub-nav-padding: 5px;
   }
 }
 
+.upgrade-nav {
+  border-top: $border;
+  margin-bottom: $padding * 2;
+}
+
+.upgrade-group {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-left: $padding;
+  .header {
+    padding-right: $padding;
+    background: transparent;
+    border: none;
+    color: white;
+    transition: 300ms cubic-bezier(0.075, 0.82, 0.165, 1);
+    &:hover {
+      color: $active-color;
+    }
+  }
+  .plan-details {
+    font-size: 12px;
+    display: flex;
+    flex-direction: column;
+    opacity: .7;
+    .plan {
+      font-weight: 600;
+      font-weight: 13px;
+    }
+    .usage {
+      font-size: 11px;
+    }
+  }
+}
