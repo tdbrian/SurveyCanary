@@ -1,17 +1,35 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
-import { MySurveysComponent } from './my-surveys/my-surveys.component';
-import { MissingPageComponent } from './missing-page/missing-page.component';
 import { SharedModule } from '../shared/shared.module';
+import { RouterModule, Routes } from '@angular/router';
+import { MissingPageComponent } from './missing-page/missing-page.component';
+import { DashboardComponent } from './dashboard/dashboard.component';
+
+const routes: Routes = [
+  {
+    path: 'dashboard',
+    component: DashboardComponent,
+    data: { title: 'Dashboard' }
+  },
+  {
+    path: '',
+    redirectTo: '/dashboard',
+    pathMatch: 'full'
+  },
+  {
+    path: '**',
+    component: MissingPageComponent,
+    data: { title: '404 Page Not Found' }
+  },
+];
 
 @NgModule({
   imports: [
     CommonModule,
     SharedModule,
-    MissingPageComponent,
-    MySurveysComponent
+    RouterModule.forChild(routes)
   ],
-  declarations: []
+  declarations: [DashboardComponent, MissingPageComponent]
 })
 export class PagesModule { }
